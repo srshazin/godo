@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Godo
+Comment=Simple todo app written in Go and Typescript
+Exec=/usr/bin/godo
+Icon=Godo
+Terminal=false
+Categories=Utility;Application;

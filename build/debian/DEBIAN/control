@@ -1,0 +1,8 @@
+Package: Godo
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: amd64
+Maintainer: Shazin <shazin.io@proton.me>
+Description: Simple todo list app made with Golang and Typescript
+

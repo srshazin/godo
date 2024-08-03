@@ -1,0 +1,219 @@
+body {
+  background-color: black;
+  margin: 0;
+  color: white;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.TodoListApp {
+  height: calc(100vh - 3rem);
+  width: 100vw;
+  position: fixed;
+  top: 2rem;
+}
+
+section.todo-write {
+  /* background: red; */
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.todo-display {
+  position: absolute;
+  top: 6rem;
+  height: calc(100vh - 7rem);
+  overflow-y: hidden;
+  width: 95%;
+  /* background: #23272f; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.action-remove svg path {
+  stroke: #ff5353 !important;
+}
+
+.action-mark svg path {
+  stroke: #69ff69 !important;
+}
+form.todo-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+input.add-todo-box {
+  width: 100%;
+  background: transparent;
+  height: 53px;
+  color: #fff;
+  font-size: 19pt;
+  padding: 0px 9px;
+  border: none;
+  caret-color: #8bc34a;
+  padding-left: 2rem;
+  padding-top: 10px;
+}
+
+input.add-todo-box:focus {
+  outline: none;
+}
+
+.todoList-container {
+  margin: auto;
+  /* border-radius: 21px; */
+  padding: 11px 13px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 7rem);
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.todoListContainer {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff12;
+  margin-bottom: 9px;
+  border-radius: 7px;
+  align-items: center;
+  padding: 0 10px;
+  transition: 0.15s;
+  cursor: pointer;
+  height: 3.4rem;
+}
+
+button.btn-action {
+  background: transparent;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+button.btn-action svg path {
+  stroke: white;
+}
+
+button.btn-action:hover {
+  background: #cdcdcd1f;
+}
+
+.todoListContainer:hover {
+}
+.todo-complete {
+}
+.todo-text {
+  padding-left: 6px;
+}
+.todo-indicator {
+  height: 25px;
+  width: 25px;
+  border: 2px solid #03a9f4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+svg.completeed-task {
+  color: #fff;
+  width: 20px;
+}
+.todo-indicator {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #007bdd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+svg.completeed-task path {
+}
+
+svg.completeed-task {
+  color: #fff;
+  width: 16px;
+}
+
+.indicator-completed {
+  background: #007bdd;
+}
+.appBar {
+  background: transparent;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  --wails-draggable: drag;
+}
+
+button.window-action-btn {
+  background: transparent;
+  border: none;
+  height: 2.5rem;
+  width: 2.5rem;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+button.window-action-btn svg {
+  height: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ab-right {
+  display: flex;
+  gap: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+button.window-action-btn:hover {
+  background: #ffffff1a;
+}
+
+.ab-ttl {
+  padding-left: 8px;
+  padding-top: 4px;
+}
